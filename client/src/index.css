@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Landing Page */
+.landing-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.landing-page__title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.landing-page__card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 16px;
+  margin-top: 40px;
+}
+
+.landing-page__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.landing-page__card:hover {
+  transform: translateY(-4px);
+}
+
+.landing-page__card-icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+  color: #1890ff;
+}
+
+/* Student Auth */
+.student-register-page {
+  max-width: 400px;
+  margin: 40px auto 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.student-register-page__header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.student-register-page__title {
+  font-size: 24px;
+  color: #333;
+}
+
+.student-register-page__tabs {
+  margin-bottom: 20px;
+}
+
+.student-register-page__form-item {
+  margin-bottom: 16px;
+}
+
+.student-register-page__input {
+  height: 40px;
+  font-size: 16px;
+  color: #333;
+}
+
+.student-register-page__button {
+  height: 40px;
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  .student-register-page {
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 40px 20px;
+  }
+}
+
+/* Student Home Page */
+
+.home-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.home-page__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.home-page__navbar-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.home-page__logout-button {
+  height: 40px;
+  font-size: 16px;
+}
+
+.home-page__card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+}
+
+.home-page__card {
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  padding: 24px;
+}
+
+.home-page__card:hover {
+  transform: translateY(-4px);
+}
+
+.home-page__card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 16px;
+}
+
+.home-page__card-icon {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #1890ff;
+}
+
+@media (max-width: 768px) {
+  .home-page__card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page {
+    padding: 16px;
+  }
+
+  .home-page__navbar-title {
+    font-size: 20px;
+  }
+
+  .home-page__card-container {
+    grid-template-columns: 1fr;
+    grid-gap: 12px;
+  }
+}
+
+/* Leaves Page */
+.leaves-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.leaves-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.leaves-page__title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.leaves-page__button {
+  height: 40px;
+  font-size: 16px;
+}
+
+.leaves-page__card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leaves-page__card {
+  width: calc(50% - 12px);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  padding: 24px;
+}
+
+.leaves-page__card:hover {
+  transform: translateY(-4px);
+}
+
+.leaves-page__card-icon {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #1890ff;
+}
+
+.leaves-page__card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 16px;
+}
+
+.leaves-page__card-description {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 16px;
+}
+
+.leaves-page__card-button {
+  width: 100%;
+}
+
+/* Complaints Page */
+.complaints-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.complaints-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.complaints-page__title {
+  font-size: 24px;
+  color: #333;
+}
+
+.complaints-page__add-button {
+  height: 40px;
+  font-size: 16px;
+}
+
+.complaints-page__complaint-list {
+  margin-top: 20px;
+}
+
+.complaints-page__complaint-list-title {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.complaints-page__complaint-item {
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.complaints-page__complaint-item:hover {
+  transform: translateY(-4px);
+}
+
+.complaints-page__complaint-item-type {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.complaints-page__complaint-item-date {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.complaints-page__complaint-item-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.complaints-page__complaint-item-severity {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.complaints-page__complaint-item-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.complaints-page__complaint-item-status-indicator {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.complaints-page__complaint-item-status-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.complaints-page__complaint-item-status-indicator.resolved {
+  color: #52c41a;
+}
+
+.complaints-page__complaint-item-status-indicator.pending {
+  color: #faad14;
+}
+
+/* Room Details */
+.room-details-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.room-details-page__card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+}
+
+.room-details-page__card-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.room-details-page__card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.room-details-page__card-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.room-details-page__card-info-icon {
+  font-size: 16px;
+  margin-right: 8px;
+  color: #1890ff;
+}
+
+.room-details-page__card-info-label {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.room-details-page__card-info-value {
+  color: #777;
+}
+
+/* Page not found */
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Profile Page */
+.profile-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.profile-page__card {
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+}
+
+.profile-page__avatar {
+  font-size: 64px;
+  margin-bottom: 16px;
+  color: #1890ff;
+}
+
+.profile-page__details {
+  text-align: left;
+}
+
+.profile-page__details p {
+  margin-bottom: 8px;
+}
